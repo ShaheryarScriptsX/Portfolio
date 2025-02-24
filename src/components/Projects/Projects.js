@@ -2,12 +2,23 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+// Sample images (replace these with actual images)
+import eqwell from "../../Assets/Projects/eqwell-ss.png";
+import outpostSentinel from "../../Assets/Projects/outpostsentinel-ss.png";
+import tou from "../../Assets/Projects/thinkofus-ss.png";
+import chatGptClone from "../../Assets/Projects/chatgptclone-ss.png";
+import andaInmov from "../../Assets/Projects/anda-ss.png";
+import nameGlo from "../../Assets/Projects/nameglo-ss.png";
+import ahhaa from "../../Assets/Projects/ahhaa-ss.png";
+import quibbit from "../../Assets/Projects/quibbit-ss.png";
+import starkCarz from "../../Assets/Projects/stark-ss.png";
+import sendBlueAI from "../../Assets/Projects/sendblue-ss.png";
+import sisCRM from "../../Assets/Projects/siscrm-ss.png";
+import woooo from "../../Assets/Projects/woooo-ss.png";
+import facultyDirectory from "../../Assets/Projects/faculty-ss.png";
+import howManyExtension from "../../Assets/Projects/hme-ss.png";
+import nextjsBoilerplate from "../../Assets/Projects/nextjs15-ss.png";
 
 function Projects() {
   return (
@@ -18,73 +29,170 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are some projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={eqwell}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="EQWELL"
+              description="Corporate productivity platform with health reports, coach-guided workouts, payments, and real-time features. Built front-end with React.js, integrated Socket.io, and implemented Stripe payments."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nextjsBoilerplate}
+              isBlog={false}
+              title="Boilerplate (Next.js 15 with Clerk)"
+              description="Created a Next.js 15 boilerplate application, incorporating Clerk for secure and efficient authentication. This template simplifies the development process by providing a pre-configured environment for authentication and Next.js best practices.
+Both versions highlight your skills in setting up a foundational project with modern technologies."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={outpostSentinel}
+              isBlog={false}
+              title="Outpost Sentinel"
+              description="Developed user authentication, dashboard, organization module, Alarms & Update Manager, and settings module. Built using React.js, MUI, Tailwind CSS, and JWT."
+              ghLink="#"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={tou}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Think of Us (TOU)"
+              description="Worked on the Virtual Support Client, improving UI and integrating new features for better foster care system support."
+              ghLink="#"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={chatGptClone}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Chat GPT Clone"
+              description="React-based app leveraging Chat GPT APIs for interactive conversations, text-to-speech with multiple voices, and AI image generation."
+              ghLink="#"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={andaInmov}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="ANDA INMOV"
+              description="GenAI-powered chatbot for file-based data extraction and AI text analysis. Built an interactive React.js front end and integrated APIs."
+              ghLink="#"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={nameGlo}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="NAME GLO"
+              description="Developed the front-end for an artist-led neon design studio, ensuring a visually engaging, responsive, and user-friendly experience."
+              ghLink="#"
+              demoLink="#"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={ahhaa}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="AHHAA App"
+              description="Built the admin panel for a mindfulness and emotional well-being platform, enabling subscription management, analytics, and content updates."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={quibbit}
+              isBlog={false}
+              title="Quibbit"
+              description="Debugged and enhanced functionality for a vehicle maintenance scheduling app, improving user experience and reliability."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={starkCarz}
+              isBlog={false}
+              title="Stark Carz"
+              description="Built the backend for an eCommerce platform for cars using MongoDB, Express.js, and Node.js. Integrated secure payments with Stripe."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sendBlueAI}
+              isBlog={false}
+              title="SendBlue_ai"
+              description="Developed an AI chatbot with text-to-speech, multiple voice options, and image generation powered by Chat GPT APIs."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sisCRM}
+              isBlog={false}
+              title="SIS CRM"
+              description="Developed UI for a customer relationship management platform focused on contract management and secure payment processing."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={woooo}
+              isBlog={false}
+              title="WOOOO App"
+              description="Built real-time chat, translation, and audio/video calling features for a communication app. Integrated speech-to-text and text-to-speech functionalities."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={facultyDirectory}
+              isBlog={false}
+              title="Faculty Directory"
+              description="Created a web app for academic networking, enabling faculty searches across universities using Firebase for real-time data."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={howManyExtension}
+              isBlog={false}
+              title="HowManyExtension"
+              description="Built the frontend for a Chrome extension, focusing on responsive design and an intuitive UI for seamless user interaction."
+              ghLink="#"
+              demoLink="#"
             />
           </Col>
         </Row>
